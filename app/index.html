@@ -11,13 +11,14 @@
 <body ng-app="moviecat" ng-controller="MovieCatController">
     <!-- 顶部导航栏开始 -->
     <div class="top">
-        <div class="header">
-            <a href="#/home_page"><img src="assets/img/logo.png" alt=""></a>
-            <div class="search">
-                <input class="my-input" type="text" placeholder="电影搜索" ng-model='keyWord'>
-                <button ng-click="search()">搜索</button>
+        <div class="top">
+            <div class="header">
+                <a href="#/home_page">豆瓣电影</a>
+                <div class="search">
+                    <input class="my-input" type="text" placeholder="电影搜索" ng-model="keyWord">
+                    <button ng-click="search()">搜索</button>
+                </div>
             </div>
-        </div>
         <nav class="nav">
             <ul>
                 <!--li中添加 active 类样式，显示焦点状态。-->
@@ -36,7 +37,7 @@
     </div>
     <footer class="footer">
         <div class="container">
-            <p>版权所有&copy; 前端与移动开发学院 前端(允许侵权)</p>
+            <p>版权所有&copy; (允许侵权)</p>
         </div>
     </footer>
     <!-- 自动补全C3样式的前缀 -->

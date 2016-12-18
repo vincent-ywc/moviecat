@@ -19,9 +19,11 @@
 
         //暴露点击搜索的方法
         $scope.search = function() {
+            if(!(!!$scope.keyWord)){
+                return
+            }
             $location.url('search?q=' + $scope.keyWord);
         }
-
     }])
 
 })(angular);
